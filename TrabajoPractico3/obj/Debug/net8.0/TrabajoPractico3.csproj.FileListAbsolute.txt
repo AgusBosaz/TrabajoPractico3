@@ -1,0 +1,14 @@
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\bin\Debug\net8.0\TrabajoPractico3.exe
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\bin\Debug\net8.0\TrabajoPractico3.deps.json
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\bin\Debug\net8.0\TrabajoPractico3.runtimeconfig.json
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\bin\Debug\net8.0\TrabajoPractico3.dll
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\bin\Debug\net8.0\TrabajoPractico3.pdb
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.AssemblyInfoInputs.cache
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.AssemblyInfo.cs
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.csproj.CoreCompileInputs.cache
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.dll
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\refint\TrabajoPractico3.dll
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.pdb
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.genruntimeconfig.cache
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\ref\TrabajoPractico3.dll
