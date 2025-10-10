@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading.Channels;
 
 
 class Program
@@ -8,22 +10,20 @@ class Program
     static void Main(string[] args)
     {
         menu();
-        Console.WriteLine("Probando que solo suba a mi rama");
-        Console.WriteLine("Probando que solo suba a mi rama2");
     }
 
     static void menu()
     {
-        string path = @"D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\f1_last5years.csv";
+        string path = @"..\..\..\f1_last5years.csv";
         string[,] datos = leerArchivo(path);
         int opcion = 0;
         bool bandera = true;
 
-        while (bandera) 
+        while (bandera)
         {
             Console.WriteLine("Menu de opciones:");
             Console.WriteLine("1. Buscar piloto");
-            Console.WriteLine("2. Campeon segun temporada");
+            Console.WriteLine("2. Datos de un equipo por temporada");
             Console.WriteLine("3. Remontada mas grande");
             Console.WriteLine("4. Nombre de todos los equipos");
             Console.WriteLine("5. Mostrar todo");
@@ -36,7 +36,7 @@ class Program
                     buscarPiloto(datos);
                     break;
                 case 2:
-                    campeonTemporada(datos);
+                    campeonatoEquipo(datos);
                     break;
                 case 3:
                     remontadaMasGrande(datos);
@@ -119,16 +119,77 @@ class Program
         }
         Console.WriteLine($"\nEl piloto {nombrePiloto} ha subido al podio {contadorPodios} veces");
     }
-    static void campeonTemporada(string[,] datos)
+    static void campeonatoEquipo(string[,] datos)
     {
-        Console.WriteLine("Ingrese la temporada a buscar:");
-        string temporada = Console.ReadLine();
-        
+        Console.Write("Ingrese la temporada a buscar: ");
+        string temporada = Console.ReadLine()?.Trim();
 
+        Console.Write("Ingrese el nombre del equipo: ");
+        string equipoBuscado = Console.ReadLine()?.Trim();
 
+        double totalPuntos = 0;
+        bool encontrado = false;
+
+        Console.WriteLine($"\n--- Resultados del equipo {equipoBuscado} en {temporada} ---");
+
+        for (int i = 0; i < datos.GetLength(0); i++)
+        {
+            // columnas: 0=Año, 1=Equipo, 2=Piloto, 3=Carrera, 4=Posición, 5=Puntos
+            if (datos[i, 0] == temporada && datos[i, 1].Equals(equipoBuscado, StringComparison.OrdinalIgnoreCase))
+            {
+                string piloto = datos[i, 2];
+                string carrera = datos[i, 3];
+                string puntosStr = datos[i, 6];
+                
+                if (double.TryParse(puntosStr, NumberStyles.Any, CultureInfo.InvariantCulture, out double puntos))
+                {
+                    totalPuntos += puntos;
+                    encontrado = true;
+                }
+
+                Console.WriteLine($"Carrera: {carrera} - Piloto: {piloto} - Puntos: {puntos}");
+                totalPuntos += puntos;
+                encontrado = true;
+            }
+        }
+
+        if (encontrado)
+        {
+            Console.WriteLine($"\nTOTAL DE PUNTOS DEL EQUIPO {equipoBuscado} EN {temporada}: {totalPuntos}");
+        }
+        else
+        {
+            Console.WriteLine($"\n⚠️ No se encontraron registros del equipo {equipoBuscado} en la temporada {temporada}");
+        }
     }
     static void remontadaMasGrande(string[,] datos)
     {
+        List<string> resultados = new List<string>();
+        int mayorRemontada = 0;
+        int columnas = datos.GetLength(1);
+        for (int i = 1; i < datos.GetLength(0); i++)
+        {
+            int posicionSalida = int.Parse(datos[i, 4]);
+            int posicionLlegada = int.Parse(datos[i, 5]);
+            int remontada = posicionSalida - posicionLlegada;
+            if (remontada > mayorRemontada)
+            {
+                mayorRemontada = remontada;
+                resultados.Clear();
+                for (int j = 0; j < datos.GetLength(1); j++)
+                {
+                    resultados.Add(datos[i, j]);
+                }
+            }
+        }
+        Console.WriteLine($"La mayor remontada fue de {mayorRemontada} posiciones");
+        Console.WriteLine("El piloto y los detalles de la carrera son:");
+        foreach (var item in resultados)
+        { 
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
+
     }
     static void nombreTodosLosEquipos(string[,] datos)
     {

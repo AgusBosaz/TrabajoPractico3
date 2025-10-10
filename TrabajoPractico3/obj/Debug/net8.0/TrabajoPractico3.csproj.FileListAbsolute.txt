@@ -12,3 +12,4 @@ D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\ob
 D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.pdb
 D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.genruntimeconfig.cache
 D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\ref\TrabajoPractico3.dll
+D:\Clases\Programacion 1\Trabajos Practicos\TrabajoPractico3\TrabajoPractico3\obj\Debug\net8.0\TrabajoPractico3.sourcelink.json

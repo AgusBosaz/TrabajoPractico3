@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|d:\\clases\\programacion 1\\trabajos practicos\\trabajopractico3\\trabajopractico3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|solutionrelative:trabajopractico3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,19 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\Program.cs",
-              "RelativeDocumentMoniker": "TrabajoPractico3\\Program.cs",
-              "ToolTip": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\Program.cs",
-              "RelativeToolTip": "TrabajoPractico3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T16:26:13.506Z",
-              "EditorCaption": ""
             }
           ]
         }
