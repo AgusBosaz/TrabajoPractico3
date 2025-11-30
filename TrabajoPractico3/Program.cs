@@ -27,7 +27,8 @@ class Program
             Console.WriteLine("3. Remontada mas grande");
             Console.WriteLine("4. Nombre de todos los equipos");
             Console.WriteLine("5. Mostrar todo");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("6. Piloto mas consistente");
+            Console.WriteLine("7. Salir");
             Console.Write("Ingrese una opcion: ");
             opcion = int.Parse(Console.ReadLine());
             switch (opcion)
@@ -48,9 +49,12 @@ class Program
                     mostrarTodo(datos);
                     break;
                 case 6:
+                    pilotoMasConsistente(datos);
+                    break;
+                case 7:
                     bandera = false;
                     break;
-                default:
+            default:
                     Console.WriteLine("Opcion no valida");
                     break;
             }
@@ -222,5 +226,48 @@ class Program
             }
         }
     }
+    static void pilotoMasConsistente(string[,] datos)
+    {
+        Console.WriteLine("\n--- Piloto más consistente (mejor promedio de posiciones finales) ---");
+
+        
+        Dictionary<string, (int sumaPosiciones, int cantidadCarreras)> stats =
+            new Dictionary<string, (int, int)>();
+
+        for (int i = 1; i < datos.GetLength(0); i++) 
+        {
+            string piloto = datos[i, 2];
+            string posStr = datos[i, 5];
+
+            if (int.TryParse(posStr, out int posicion))
+            {
+                if (stats.ContainsKey(piloto))
+                {
+                    stats[piloto] = (stats[piloto].sumaPosiciones + posicion,
+                                     stats[piloto].cantidadCarreras + 1);
+                }
+                else
+                {
+                    stats[piloto] = (posicion, 1);
+                }
+            }
+        }
+
+        var promedios = stats
+            .Select(p => new {
+                Piloto = p.Key,
+                Promedio = (double)p.Value.sumaPosiciones / p.Value.cantidadCarreras,
+                Carreras = p.Value.cantidadCarreras
+            })
+            .OrderBy(p => p.Promedio) 
+            .ToList();
+
+        var mejor = promedios.First();
+
+        Console.WriteLine($"El piloto más consistente: {mejor.Piloto}");
+        Console.WriteLine($"Promedio de posición final: {mejor.Promedio:F2}");
+        Console.WriteLine($"Carreras analizadas: {mejor.Carreras}\n");
+    }
+
 
 }

@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|d:\\clases\\programacion 1\\trabajos practicos\\trabajopractico3\\trabajopractico3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|solutionrelative:trabajopractico3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|d:\\clases\\programacion 1\\trabajos practicos\\trabajopractico3\\trabajopractico3\\f1_last5years.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0EE90A07-2C1D-410D-B4E1-0FB16327E80B}|TrabajoPractico3\\TrabajoPractico3.csproj|solutionrelative:trabajopractico3\\f1_last5years.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,28 +42,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "f1_last5years.csv",
-              "DocumentMoniker": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\f1_last5years.csv",
-              "RelativeDocumentMoniker": "TrabajoPractico3\\f1_last5years.csv",
-              "ToolTip": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\f1_last5years.csv",
-              "RelativeToolTip": "TrabajoPractico3\\f1_last5years.csv",
-              "ViewState": "AgIAAKIGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-10T13:49:03.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\Program.cs",
               "RelativeDocumentMoniker": "TrabajoPractico3\\Program.cs",
-              "ToolTip": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\Program.cs",
-              "RelativeToolTip": "TrabajoPractico3\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "ToolTip": "D:\\Clases\\Programacion 1\\Trabajos Practicos\\TrabajoPractico3\\TrabajoPractico3\\Program.cs*",
+              "RelativeToolTip": "TrabajoPractico3\\Program.cs*",
+              "ViewState": "AgIAAMUAAAAAAAAAAAA2wAoBAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T16:26:13.506Z",
+              "WhenOpened": "2025-10-13T17:34:15.793Z",
               "EditorCaption": ""
             }
           ]
